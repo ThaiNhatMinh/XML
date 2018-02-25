@@ -40,7 +40,7 @@ function LoadProduct(xml)
     {
         // create node for table
         var TD = document.createElement("TD");
-        TD.style.backgroundColor = 'rgba(60, 179, 113, 0.5)';
+        //TD.style.backgroundColor = 'rgba(60, 179, 113, 0.5)';
         // Create name
         var node = document.createElement("P");
         var name = document.createTextNode(DanhSach[i].getAttribute("Ten") + " (" + DanhSach[i].getAttribute("Don_gia_Ban")+ " D)");
