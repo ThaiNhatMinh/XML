@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <script src="js/main.js"></script>
+        <script src="js/modal.js"></script>
+        <script> loadDataManager();</script>
+        <link rel="stylesheet" type="text/css" href="css/modal.css">
+        <title>Here</title>
+    </head>
+    <style>
+        p{font-family: Segoe UI;}
+        td{background-color: rgba(0, 100, 0, 0.782);}
+        td:hover{background-color:rgba(0, 100, 0, 0.382); }
+        body{background-color: rgb(25, 112, 108);}
+        #container{ text-align:center; }
+
+        #Logo,#Name{  display:inline-block;text-align:center; }
+        #SumCost{
+            border: 2px solid maroon;
+            border-radius: 5px;
+            color: maroon;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        
+    </style>
+    <body>
+        <div id='container'>
+            <div id="Logo">
+                <img id="RestaurantLogo" src="" alt="Logo">
+            </div>
+            <div id="Name">
+                <h1><p id="RestaurantName"></p></h1>
+            </div>
+        </div>
+        <div><h2><p id="SumCost"></p></h2></div>
+        <div id="ProductLists"> </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="HideModal();">&times;</span>
+                <form>
+                        <h2><p id="TinhTienTitle">Tính tiền:</p></h2>
+                        <p id="Gia">Giá: </p>
+                        <p>Nhập số lượng</p>
+                        <input type="text" name="number" id="number"><br>
+                        <button type="button" onclick="CalTotalCost();">Tính</button>
+                        <h3><p id="TotalCost" style="display: none;">Thành tiền: </p></h3>
+                </form>
+            </div>
+
+        </div>
+        <script src="js/modal.js"></script>
+    </body>
+</html>
